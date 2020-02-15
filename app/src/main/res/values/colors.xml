@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="WarnaBiru">#199BEE</color>
+    <color name="WarnaKuning">#ffd21d</color>
+    <color name="WarnaBiruTua">#35405A</color>
+    <color name="WarnaPutih">#ffffff</color>
+    <color name="WarnaHitam">#2B2B2B</color>
+    <color name="WarnaHitamDua">#2F2F2F</color>
+    <color name="WarnaHitamTiga">#000000</color>
+    <color name="WarnaOren">#FF771D</color>
+    <color name="WarnaAbuAbu">#B7B7B7</color>
+    <color name="WarnaAbuAbuDua">#9E9E9E</color>
+    <color name="WarnaAbuAbuTiga">#707070</color>
+    <color name="WarnaAbuAbuEmpat">#D8D8D8</color>
+    <color name="WarnaAbuAbuLima">#979797</color>
+</resources>

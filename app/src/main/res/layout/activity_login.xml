@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WarnaPutih"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/InputUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/sfposcutext"
+        android:text="@string/username_atau_nomor_telepon"
+        android:textColor="@color/WarnaAbuAbuDua"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TempatInputUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custome_shape_tombol_input_login"
+        android:fontFamily="@font/sfposcutext"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/WarnaHitamTiga"
+        android:textSize="18sp"
+        android:hint="@string/masukkan_username"
+        android:autofillHints="@string/masukkan_username"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InputUsername" />
+
+    <TextView
+        android:id="@+id/InputPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/sfposcutext"
+        android:text="@string/password"
+        android:textColor="@color/WarnaAbuAbuDua"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TempatInputUsername" />
+
+    <EditText
+        android:id="@+id/TempatPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custome_shape_tombol_input_login"
+        android:fontFamily="@font/sfposcutext"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/WarnaHitamDua"
+        android:textSize="18sp"
+        android:hint="@string/masukkan_password"
+        android:autofillHints="@string/masukkan_password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InputPassword"
+        />
+
+    <Button
+        android:id="@+id/TombolDiLogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custome_shape_tombol_masuk"
+        android:fontFamily="@font/sfposcutext"
+        android:text="@string/masuk"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TempatPassword" />
+
+    <TextView
+        android:id="@+id/KataLupaPassword"
+        android:layout_width="116dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/sfposcutext"
+        android:gravity="center"
+        android:text="@string/lupa_password"
+        android:textColor="@color/WarnaAbuAbuTiga"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TombolDiLogin" />
+
+    <TextView
+        android:id="@+id/GarisDiLogin"
+        android:layout_width="45dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/custome_shape_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/KataLupaPassword" />
+
+    <TextView
+        android:id="@+id/KataBelumAdaAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="59dp"
+        android:fontFamily="@font/sfposcutext"
+        android:gravity="center"
+        android:text="@string/belum_punya_akun"
+        android:textColor="@color/WarnaBiruTua"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/DaftarAkun"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GarisDiLogin" />
+
+    <TextView
+        android:id="@+id/DaftarAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="59dp"
+        android:fontFamily="@font/sfposcutext"
+        android:gravity="center"
+        android:text="@string/daftar"
+        android:textAllCaps="true"
+        android:textColor="@color/WarnaBiru"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/KataBelumAdaAkun"
+        app:layout_constraintTop_toBottomOf="@id/GarisDiLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
