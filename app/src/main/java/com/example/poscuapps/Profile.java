@@ -9,37 +9,36 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MenuUtama extends AppCompatActivity {
+public class Profile extends AppCompatActivity {
 
-    public BottomNavigationView bottomnavigationView;
+    public BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_utama);
+        setContentView(R.layout.activity_profile);
 
-        bottomnavigationView = findViewById(R.id.BottomNavigationView);
+        bottomNavigationView = findViewById(R.id.BottomNavigationView);
+        bottomNavigationView.setSelectedItemId(R.id.profile);
 
-        bottomnavigationView.setSelectedItemId(R.id.beranda);
-        bottomnavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId())
                 {
+                    case R.id.profile:
+                        return true;
                     case R.id.beranda:
+                        startActivity(new Intent(getApplicationContext(),MenuUtama.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.kelola:
                         startActivity(new Intent(getApplicationContext(),Kelola.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.profile:
-                        startActivity(new Intent(getApplicationContext(),Profile.class));
                         overridePendingTransition(0,0);
                         return true;
                 }
                 return false;
             }
         });
-
     }
 }

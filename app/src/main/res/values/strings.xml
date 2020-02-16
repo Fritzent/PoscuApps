@@ -48,4 +48,13 @@
     <string name="_999_nota">999 Nota</string>
     <string name="outlet_utama">Outlet Utama</string>
     <string name="jeje_laundry">JEJE LAUNDRY</string>
+    <string name="proses_laundry">Proses Laundri</string>
+    <string name="histori_laundri">Histori Laundri</string>
+    <string name="pelanggan">Pelanggan</string>
+    <string name="paket_laundri">Paket Laundri</string>
+    <string name="laporan">Laporan</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="beranda">Beranda</string>
+    <string name="kelola">Kelola</string>
+    <string name="profile">Profile</string>
 </resources>

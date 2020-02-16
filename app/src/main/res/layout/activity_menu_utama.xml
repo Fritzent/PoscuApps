@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuUtama">
+
     <LinearLayout
         android:id="@+id/BarAtas"
         android:layout_width="match_parent"
@@ -43,8 +44,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:paddingTop="34dp"
-        android:paddingLeft="31dp"
-        android:paddingRight="31dp"
+        android:paddingStart="31dp"
+        android:paddingEnd="31dp"
         android:background="@drawable/gelombang"
         >
 
@@ -132,7 +133,173 @@
             android:textColor="@color/WarnaPutih"
             android:fontFamily="@font/sfposcutext"
             />
-
     </RelativeLayout>
+    <ImageView
+        android:id="@+id/GambarIconProsesLaundry"
+        android:layout_width="100dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/TempatDataDiriUser"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/proseslaundri"
+        android:contentDescription="@string/proses_laundry"
+        />
+    <TextView
+        android:id="@+id/NamaFiturProsesLaundry"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/GambarIconProsesLaundry"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:gravity="center"
+        android:text="@string/proses_laundry"
+        android:textSize="14sp"
+        android:textColor="@color/WarnaHitam"
+        android:fontFamily="@font/sfposcutext"
+        />
+    <ImageView
+        android:id="@+id/GambarIconHistoryLaundry"
+        android:layout_width="100dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/TempatDataDiriUser"
+        app:layout_constraintLeft_toRightOf="@id/GambarIconProsesLaundry"
+        android:src="@drawable/historilaundri"
+        android:contentDescription="@string/histori_laundri"
+        />
+    <TextView
+        android:id="@+id/NamaFiturHistoriLaundry"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/GambarIconHistoryLaundry"
+        app:layout_constraintLeft_toRightOf="@id/NamaFiturProsesLaundry"
+        android:gravity="center"
+        android:text="@string/histori_laundri"
+        android:textSize="14sp"
+        android:textColor="@color/WarnaHitam"
+        android:fontFamily="@font/sfposcutext"
+        />
+    <ImageView
+        android:id="@+id/GambarIconPelanggan"
+        android:layout_width="100dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintTop_toBottomOf="@id/TempatDataDiriUser"
+        app:layout_constraintLeft_toRightOf="@id/GambarIconHistoryLaundry"
+        android:src="@drawable/pelanggan"
+        android:contentDescription="@string/pelanggan"
+        />
+    <TextView
+        android:id="@+id/NamaFiturPelanggan"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintTop_toBottomOf="@id/GambarIconPelanggan"
+        app:layout_constraintLeft_toRightOf="@id/NamaFiturHistoriLaundry"
+        android:gravity="center"
+        android:text="@string/pelanggan"
+        android:textSize="14sp"
+        android:textColor="@color/WarnaHitam"
+        android:fontFamily="@font/sfposcutext"
+        />
+    <ImageView
+        android:id="@+id/GambarIconPaketLaundry"
+        android:layout_width="100dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/NamaFiturProsesLaundry"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/paketlaundri"
+        android:contentDescription="@string/paket_laundri"
+        />
+    <TextView
+        android:id="@+id/NamaFiturPaketLaundry"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/GambarIconPaketLaundry"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:gravity="center"
+        android:text="@string/paket_laundri"
+        android:textSize="14sp"
+        android:textColor="@color/WarnaHitam"
+        android:fontFamily="@font/sfposcutext"
+        />
+    <ImageView
+        android:id="@+id/GambarIconLaporan"
+        android:layout_width="100dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/NamaFiturHistoriLaundry"
+        app:layout_constraintLeft_toRightOf="@id/GambarIconPaketLaundry"
+        android:src="@drawable/laporanlaundri"
+        android:contentDescription="@string/laporan"
+        />
+    <TextView
+        android:id="@+id/NamaFiturLaporan"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/GambarIconLaporan"
+        app:layout_constraintLeft_toRightOf="@id/NamaFiturPaketLaundry"
+        android:gravity="center"
+        android:text="@string/laporan"
+        android:textSize="14sp"
+        android:textColor="@color/WarnaHitam"
+        android:fontFamily="@font/sfposcutext"
+        />
+    <ImageView
+        android:id="@+id/GambarIconScanQrCode"
+        android:layout_width="100dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintTop_toBottomOf="@id/NamaFiturPelanggan"
+        app:layout_constraintLeft_toRightOf="@id/GambarIconLaporan"
+        android:src="@drawable/scanqr"
+        android:contentDescription="@string/scan_qr_code"
+        />
+    <TextView
+        android:id="@+id/NamaFiturScanQrCode"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/GambarIconScanQrCode"
+        app:layout_constraintLeft_toRightOf="@id/NamaFiturLaporan"
+        android:gravity="center"
+        android:text="@string/scan_qr_code"
+        android:textSize="14sp"
+        android:textColor="@color/WarnaHitam"
+        android:fontFamily="@font/sfposcutext"
+        />
+    
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/WarnaPutih"
+        app:itemBackground="@color/WarnaPutih"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/bottom_navigation"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
