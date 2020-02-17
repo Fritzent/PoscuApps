@@ -6,12 +6,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MenuUtama extends AppCompatActivity {
 
     public BottomNavigationView bottomnavigationView;
+    public FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,16 @@ public class MenuUtama extends AppCompatActivity {
                         return true;
                 }
                 return false;
+            }
+        });
+
+        floatingActionButton = findViewById(R.id.FloatingActionButton);
+
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent MenujuTambahTransaksi = new Intent(getApplicationContext(),TambahTransaksi.class);
+                startActivity(MenujuTambahTransaksi);
             }
         });
 

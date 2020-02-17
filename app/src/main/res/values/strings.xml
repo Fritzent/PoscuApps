@@ -57,4 +57,22 @@
     <string name="beranda">Beranda</string>
     <string name="kelola">Kelola</string>
     <string name="profile">Profile</string>
+    <string name="tambahkan_transaksi">Tambahkan transaksi</string>
+    <string name="nama_pelanggan">Nama pelanggan</string>
+    <string name="contoh_sisca_br_tarigan">contoh : Sisca Br Tarigan</string>
+    <string name="contoh_62_857_6340_2988">contoh : +62 857-6340-2988</string>
+    <string name="contoh_ocean_nomor_4b">contoh : Ocean, Nomor 4B</string>
+    <string name="kode_rak_simpan">Kode rak simpan</string>
+    <string name="pewangi_baju">Pewangi baju</string>
+    <string name="contoh_ya_parfum_downy">contoh : Ya, parfum downy</string>
+    <string name="karyawan">Karyawan</string>
+    <string name="tambah_karyawan">Tambah Karyawan</string>
+    <string name="id_karyawan">ID Karyawan :</string>
+    <string name="pk42125">PK42125</string>
+    <string name="nomor_ktp">Nomor KTP</string>
+    <string name="contoh_12070412040000001">contoh : 12070412040000001</string>
+    <string name="alamat_tempat_tinggal">Alamat tempat tinggal</string>
+    <string name="contoh_jl_rambutan_kutu_dukuh">contoh : Jl.Rambutan, Kutu Dukuh</string>
+    <string name="contoh_poscuapp_gmail_com">contoh : poscuapp@gmail.com</string>
+    <string name="contoh_poscuappsgoks123">contoh : PoscuAppsGoks123</string>
 </resources>

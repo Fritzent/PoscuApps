@@ -4,17 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/WarnaPutihDua"
     tools:context=".Kelola">
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="Ini bagian Kelola"
+        app:layout_constraintLeft_toLeftOf="parent"
         android:gravity="center"
+        android:background="@color/WarnaPutih"
+        >
+        <TextView
+            android:layout_width="78dp"
+            android:layout_height="24dp"
+            android:text="@string/karyawan"
+            android:textSize="18sp"
+            android:textColor="@color/WarnaHitam"
+            android:textStyle="bold"
+            android:fontFamily="@font/sfposcutext"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FloatingActionButtonDiKelola"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toTopOf="@id/BottomNavigationView"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="25dp"
+        app:backgroundTint="@color/WarnaKuning"
+        android:src="@drawable/custome_add_icon"
+        app:fabSize="normal"
         />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

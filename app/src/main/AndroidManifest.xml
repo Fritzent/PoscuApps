@@ -9,8 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Profile"></activity>
-        <activity android:name=".Kelola" />
+        <activity android:name=".FormTambahKaryawan" android:parentActivityName=".Kelola" android:label="@string/tambah_karyawan"></activity>
+        <activity
+            android:name=".TambahTransaksi"
+            android:label="@string/tambahkan_transaksi"
+            android:parentActivityName=".MenuUtama" />
+        <activity android:name=".Profile" />
+        <activity
+            android:name=".Kelola"
+            android:label="@string/kelola"
+            android:parentActivityName=".MenuUtama" />
         <activity
             android:name=".MenuUtama"
             android:theme="@style/PoscuTheme" />
