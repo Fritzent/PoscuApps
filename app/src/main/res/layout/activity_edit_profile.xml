@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/WarnaPutihDua"
-    tools:context=".FormTambahKaryawan">
+    tools:context=".EditProfile">
 
     <ImageView
-        android:id="@+id/GambarTambahKaryawan"
+        android:id="@+id/GambarEditProfile"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:background="@drawable/custome_shape_tambah_transaksi"
-        android:contentDescription="@string/tambah_karyawan"
+        android:contentDescription="@string/edit_profil"
         />
     <RelativeLayout
         android:id="@+id/TempatTambahKaryawan"
@@ -30,32 +30,9 @@
         android:layout_marginEnd="20dp"
         android:elevation="10dp"
         >
+
         <TextView
-            android:id="@+id/IDKaryawan"
-            android:layout_width="wrap_content"
-            android:layout_height="19dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginStart="20dp"
-            android:text="@string/id_karyawan"
-            android:textSize="14sp"
-            android:textColor="@color/WarnaAbuAbu"
-            android:fontFamily="@font/sfposcutext"
-            />
-        <TextView
-            android:id="@+id/TempatIDKaryawan"
-            android:layout_toEndOf="@id/IDKaryawan"
-            android:layout_width="wrap_content"
-            android:layout_height="19dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginStart="20dp"
-            android:text="@string/pk42125"
-            android:textSize="14sp"
-            android:textColor="@color/WarnaBiru"
-            android:fontFamily="@font/sfposcutext"
-            />
-        <TextView
-            android:id="@+id/InputTambahNamaKaryawan"
-            android:layout_below="@id/IDKaryawan"
+            android:id="@+id/InputEditNamaUser"
             android:layout_width="wrap_content"
             android:layout_height="19dp"
             android:layout_marginTop="18dp"
@@ -66,8 +43,8 @@
             android:fontFamily="@font/sfposcutext"
             />
         <EditText
-            android:id="@+id/TempatInputTambahNamaKaryawan"
-            android:layout_below="@id/InputTambahNamaKaryawan"
+            android:id="@+id/TempatInputEditNamaUser"
+            android:layout_below="@id/InputEditNamaUser"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
@@ -84,8 +61,8 @@
             android:autofillHints="@string/contoh_sisca_br_tarigan"
             />
         <TextView
-            android:id="@+id/InputTambahNomorPonselKaryawan"
-            android:layout_below="@id/TempatInputTambahNamaKaryawan"
+            android:id="@+id/InputEditNomorHandphoneUser"
+            android:layout_below="@id/TempatInputEditNamaUser"
             android:layout_width="wrap_content"
             android:layout_height="19dp"
             android:layout_marginTop="18dp"
@@ -96,8 +73,8 @@
             android:fontFamily="@font/sfposcutext"
             />
         <EditText
-            android:id="@+id/TempatInputTambahNomorPonselKaryawan"
-            android:layout_below="@id/InputTambahNomorPonselKaryawan"
+            android:id="@+id/TempatInputEditNomorHandphoneUser"
+            android:layout_below="@id/InputEditNomorHandphoneUser"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
@@ -113,69 +90,11 @@
             android:hint="@string/contoh_62_857_6340_2988"
             android:autofillHints="@string/contoh_62_857_6340_2988"
             />
+
+
         <TextView
-            android:id="@+id/InputNomorKTP"
-            android:layout_below="@id/TempatInputTambahNomorPonselKaryawan"
-            android:layout_width="wrap_content"
-            android:layout_height="19dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginStart="20dp"
-            android:text="@string/nomor_ktp"
-            android:textSize="14sp"
-            android:textColor="@color/WarnaAbuAbu"
-            android:fontFamily="@font/sfposcutext"
-            />
-        <EditText
-            android:id="@+id/TempatInputNomorKTP"
-            android:layout_below="@id/InputNomorKTP"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/custome_shape_tombol_input_login"
-            android:fontFamily="@font/sfposcutext"
-            android:inputType="number"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:textColor="@color/WarnaHitamTiga"
-            android:textSize="18sp"
-            android:hint="@string/contoh_12070412040000001"
-            android:autofillHints="@string/contoh_12070412040000001"
-            />
-        <TextView
-            android:id="@+id/InputTambahAlamatKaryawan"
-            android:layout_below="@id/TempatInputNomorKTP"
-            android:layout_width="wrap_content"
-            android:layout_height="19dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginStart="20dp"
-            android:text="@string/alamat_tempat_tinggal"
-            android:textSize="14sp"
-            android:textColor="@color/WarnaAbuAbu"
-            android:fontFamily="@font/sfposcutext"
-            />
-        <EditText
-            android:id="@+id/TempatInputTambahAlamatKaryawan"
-            android:layout_below="@id/InputTambahAlamatKaryawan"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/custome_shape_tombol_input_login"
-            android:fontFamily="@font/sfposcutext"
-            android:inputType="text"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:textColor="@color/WarnaHitamTiga"
-            android:textSize="18sp"
-            android:hint="@string/contoh_jl_rambutan_kutu_dukuh"
-            android:autofillHints="@string/contoh_jl_rambutan_kutu_dukuh"
-            />
-        <TextView
-            android:id="@+id/InputTambahEmailKaryawan"
-            android:layout_below="@id/TempatInputTambahAlamatKaryawan"
+            android:id="@+id/InputEditEmailUser"
+            android:layout_below="@id/TempatInputEditNomorHandphoneUser"
             android:layout_width="wrap_content"
             android:layout_height="19dp"
             android:layout_marginTop="18dp"
@@ -186,8 +105,8 @@
             android:fontFamily="@font/sfposcutext"
             />
         <EditText
-            android:id="@+id/TempatInputTambahEmailKaryawan"
-            android:layout_below="@id/InputTambahEmailKaryawan"
+            android:id="@+id/TempatInputEditEmailUser"
+            android:layout_below="@id/InputEditEmailUser"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
@@ -204,8 +123,8 @@
             android:autofillHints="@string/contoh_poscuapp_gmail_com"
             />
         <TextView
-            android:id="@+id/InputTambahPasswordKaryawan"
-            android:layout_below="@id/TempatInputTambahEmailKaryawan"
+            android:id="@+id/InputEditKataSandiUser"
+            android:layout_below="@id/TempatInputEditEmailUser"
             android:layout_width="wrap_content"
             android:layout_height="19dp"
             android:layout_marginTop="18dp"
@@ -216,8 +135,38 @@
             android:fontFamily="@font/sfposcutext"
             />
         <EditText
-            android:id="@+id/TempatInputTambahPasswordKaryawan"
-            android:layout_below="@id/InputTambahPasswordKaryawan"
+            android:id="@+id/TempatInputEditKataSandiUser"
+            android:layout_below="@id/InputEditKataSandiUser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custome_shape_tombol_input_login"
+            android:fontFamily="@font/sfposcutext"
+            android:inputType="textPassword"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/WarnaHitamTiga"
+            android:textSize="18sp"
+            android:hint="@string/contoh_poscuappsgoks123"
+            android:autofillHints="@string/contoh_poscuappsgoks123"
+            />
+        <TextView
+            android:id="@+id/InputEditUlangiKataSandiUser"
+            android:layout_below="@id/TempatInputEditKataSandiUser"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/ulangi_kata_sandi"
+            android:textSize="14sp"
+            android:textColor="@color/WarnaAbuAbu"
+            android:fontFamily="@font/sfposcutext"
+            />
+        <EditText
+            android:id="@+id/TempatInputEditUlangiKataSandiUser"
+            android:layout_below="@id/InputEditUlangiKataSandiUser"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
@@ -234,8 +183,8 @@
             android:autofillHints="@string/contoh_poscuappsgoks123"
             />
         <Button
-            android:id="@+id/TombolDiTambahKaryawan"
-            android:layout_below="@id/TempatInputTambahPasswordKaryawan"
+            android:id="@+id/TombolDiEditProfile"
+            android:layout_below="@id/TempatInputEditUlangiKataSandiUser"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginStart="20dp"
@@ -250,4 +199,5 @@
             android:textColor="@color/WarnaBiruTua"
             />
     </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

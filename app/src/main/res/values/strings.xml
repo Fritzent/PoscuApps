@@ -47,7 +47,7 @@
     <string name="cucian_hari_ini">Cucian hari ini</string>
     <string name="_999_nota">999 Nota</string>
     <string name="outlet_utama">Outlet Utama</string>
-    <string name="jeje_laundry">JEJE LAUNDRY</string>
+    <string name="jeje_laundry">JEJE Laundri</string>
     <string name="proses_laundry">Proses Laundri</string>
     <string name="histori_laundri">Histori Laundri</string>
     <string name="pelanggan">Pelanggan</string>
@@ -75,4 +75,17 @@
     <string name="contoh_jl_rambutan_kutu_dukuh">contoh : Jl.Rambutan, Kutu Dukuh</string>
     <string name="contoh_poscuapp_gmail_com">contoh : poscuapp@gmail.com</string>
     <string name="contoh_poscuappsgoks123">contoh : PoscuAppsGoks123</string>
+    <string name="gambarprofileuser">GambarProfileUser</string>
+    <string name="selena_gomgom">Selena Gomgom</string>
+    <string name="edit_profil">Edit Profil</string>
+    <string name="set_printer">Set Printer</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="keluar">Keluar</string>
+    <string name="simpan_perubahan">Simpan Perubahan</string>
+    <string name="tentang_poscu">Tentang Poscu</string>
+    <string name="bagikan_aplikasi">Bagikan Aplikasi</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="syarat_dan_ketentuan">Syarat dan Ketentuan</string>
+    <string name="kebijakan_privasi">Kebijakan Privasi</string>
+    <string name="hapus_akun">Hapus Akun</string>
 </resources>

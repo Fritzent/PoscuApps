@@ -9,12 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FormTambahKaryawan" android:parentActivityName=".Kelola" android:label="@string/tambah_karyawan"></activity>
+        <activity android:name=".Pengaturan" android:parentActivityName=".Profile" android:label="@string/pengaturan"></activity>
+        <activity
+            android:name=".EditProfile"
+            android:label="@string/edit_profil"
+            android:parentActivityName=".Profile" />
+        <activity
+            android:name=".FormTambahKaryawan"
+            android:label="@string/tambah_karyawan"
+            android:parentActivityName=".Kelola" />
         <activity
             android:name=".TambahTransaksi"
             android:label="@string/tambahkan_transaksi"
             android:parentActivityName=".MenuUtama" />
-        <activity android:name=".Profile" />
+        <activity
+            android:name=".Profile"
+            android:theme="@style/PoscuTheme" />
         <activity
             android:name=".Kelola"
             android:label="@string/kelola"

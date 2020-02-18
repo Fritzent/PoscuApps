@@ -6,12 +6,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Profile extends AppCompatActivity {
 
     public BottomNavigationView bottomNavigationView;
+    public TextView MenuEditProfile,MenuKeluar,MenuPengaturan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,36 @@ public class Profile extends AppCompatActivity {
                         return true;
                 }
                 return false;
+            }
+        });
+
+        MenuEditProfile = findViewById(R.id.MenuEditProfile);
+
+        MenuEditProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent MenujuEditProfile = new Intent(getApplicationContext(),EditProfile.class);
+                startActivity(MenujuEditProfile);
+            }
+        });
+
+        MenuKeluar = findViewById(R.id.MenuKeluar);
+
+        MenuKeluar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent MenujuKeluarAkun = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(MenujuKeluarAkun);
+            }
+        });
+
+        MenuPengaturan = findViewById(R.id.MenuPengaturan);
+
+        MenuPengaturan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent MenujuPengaturan = new Intent(getApplicationContext(),Pengaturan.class);
+                startActivity(MenujuPengaturan);
             }
         });
     }
